@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:fragment="header">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Antykwariat Romełki</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-shop-homepage/css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<style>
+    .navbar-dark .navbar-nav .nav-link{
+        color: rgb(235, 218, 119);
+        font-size: 20px;
+
+
+
+    }
+    .navbar{
+        background: rgb(206, 149, 80) !important;
+    }
+    .py-5 {
+        background: rgb(206, 149, 80) !important;
+
+    }
+    .btn btn-success{
+        display: inline-block;
+    }
+</style>
+
+<body>
+<div th:fragment="navbar">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+
+        <a class="navbar-brand" href="#">Antykwariat Romełki</a>
+
+
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Tytuł..." aria-label="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Szukaj</button>
+        </form>
+
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Koszyk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Moje konto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wyloguj</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<div th:fragment="footer">
+    <footer class="py-5 bg-dark fixed-bottom" >
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; AGA</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+    </div>
+
+<div th:fragment="body-bottom-script">
+    <script src="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/jquery/jquery.min.js"></script>
+    <script src="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+</html>
